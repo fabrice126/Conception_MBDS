@@ -30,6 +30,7 @@ public class EcranAccueil extends JPanel{
     
     public void seConnecter(){
         
+        
         this.leClient = sessionPasserCmde.traiterIdentification(this.pseudo, this.motDePasse);
         this.leClient.getNom();
         this.leClient.getPrenom();
