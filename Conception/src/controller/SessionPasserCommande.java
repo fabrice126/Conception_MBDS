@@ -21,6 +21,7 @@ public class SessionPasserCommande {
     private ClientsManager clientManager;
     
     public EcranAccueil traiterConnexion(){ return ecranAccueil;}
+    
     public Client traiterIdentification(String pseudo, String motDePasse){
         this.leClient = clientManager.rechercherClientParPseudo(pseudo,motDePasse);
         return this.leClient;
