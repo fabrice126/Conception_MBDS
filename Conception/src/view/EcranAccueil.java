@@ -18,19 +18,20 @@ public class EcranAccueil extends JPanel{
     private SessionPasserCommande sessionPasserCmde;
     private EcranAccueil ecranAccueil;
     private String id;
+    private String pseudo;
+    private String motDePasse;
     private Client leClient;
     
     
     EcranAccueil(){
+        
         EcranAccueil ecranAccueil = sessionPasserCmde.traiterConnexion();
     }
     
     public void seConnecter(){
-        this.leClient = sessionPasserCmde.traiterIdentification(this.id);
+        this.leClient = sessionPasserCmde.traiterIdentification(this.pseudo, this.motDePasse);
         this.leClient.getNom();
         this.leClient.getPrenom();
-        this.leClient.getAdresseDeLivraison();
-        this.leClient.getAdresseDeFacturation();
     }
     
 }
