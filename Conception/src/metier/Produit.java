@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model;
+package metier;
 
 /**
  *
- * @author Fabrice
+ * @author mbuffa
  */
 public class Produit {
     
@@ -30,7 +30,7 @@ public class Produit {
     }
     
     public void setLibelle(String libelle) {
-    	this.libelle = libelle;
+        this.libelle = libelle;
     }
 
     public String getDescription(){
@@ -38,7 +38,7 @@ public class Produit {
     }
 
     public void setDescription(String description) {
-    	this.description = description;
+        this.description = description;
     }
 
     public String getId(){
@@ -46,7 +46,7 @@ public class Produit {
     }
 
     public void setId(String id) {
-    	this.id = id;
+        this.id = id;
     }
 
     public double getPrixDuJour(){
@@ -54,6 +54,6 @@ public class Produit {
     }
 
     public void setPrixDuJour(double prixDuJour) {
-    	this.prixDuJour = prixDuJour;
+        this.prixDuJour = prixDuJour;
     }    
 }
